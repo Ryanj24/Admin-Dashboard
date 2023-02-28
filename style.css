@@ -66,7 +66,7 @@ svg {
 .header .searchbar {
     grid-row: 1 / 2;
     grid-column: 1 / 4;
-    border: 1px solid;
+    /*border: 1px solid;*/
     display: flex;
     align-items: center;
     padding-left: 50px;
@@ -88,14 +88,15 @@ svg {
 .header .profile {
     grid-row: 1 / 2;
     grid-column: 4 / 6;
-    border: 1px solid;
+    /*border: 1px solid;*/
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
 }
 
+/*
 .header .profile div {
     border: 1px solid;
-}
+}*/
 
 .header .profile .bell-icon {
     display: flex;
@@ -129,7 +130,7 @@ svg {
 .header .welcome {
     grid-row: 2 / 3;
     grid-column: 1 / 4;
-    border: 1px solid;
+    /*border: 1px solid;*/
     display: flex;
     padding: 10px 0 10px 50px;
 }
@@ -164,7 +165,23 @@ svg {
 .header .btns {
     grid-row: 2 / 3;
     grid-column: 4 / 6;
-    border: 1px solid;
+    /*border: 1px solid;*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.header .btns div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid;*/
+}
+
+.header .btns button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+
 }
 
 
