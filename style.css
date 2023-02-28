@@ -11,23 +11,47 @@ body {
     grid-template-rows: repeat(4, 1fr);
 }
 
+svg {
+    max-height: 30px;
+    max-width: 30px;
+}
+
 .sidebar-nav {
     height: 100vh;
     grid-column: 1 / 1;
     grid-row: 1 / 5;
     border: 1px solid;
+    padding: 20px;
 }
 
 .sidebar-nav .logo {
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .sidebar-nav .logo h1 {
     margin-left: 10px;
+}
+
+.sidebar-nav ul {
+    padding-left: 25px;
+}
+
+.sidebar-nav ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-nav ul li svg {
+    margin-right: 10px;
+}
+
+.sidebar-nav .first-list {
+    margin-bottom: 100px;
 }
 
 .header {
