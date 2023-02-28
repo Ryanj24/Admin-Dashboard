@@ -63,10 +63,26 @@ svg {
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
 }
 
-.header .search {
+.header .searchbar {
     grid-row: 1 / 2;
     grid-column: 1 / 4;
     border: 1px solid;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.header .searchbar svg{
+    margin-right: 20px;
+}
+
+.header .searchbar input{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    width: 750px;
+    background-color: rgb(240, 229, 229);
 }
 
 .header .profile {
