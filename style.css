@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif, Helvetica;
 }
 
 body {
     display: grid;
     grid-template-columns: 300px 1fr 1fr 1fr;
     grid-template-rows: repeat(5, 1fr);
+    background-color: #9dc4df;
 }
 
 svg {
@@ -24,6 +28,9 @@ button:hover {
     grid-row: 1 / -1;
     border-right: 1px solid;
     padding: 20px;
+    background-color: #881EEB;
+    color: white;
+    border-right: 1px #881EEB;
 }
 
 .sidebar-nav .logo {
@@ -39,6 +46,7 @@ button:hover {
 
 .sidebar-nav ul {
     padding-left: 25px;
+    padding-right: 10px;
 }
 
 .sidebar-nav ul li {
@@ -46,6 +54,14 @@ button:hover {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    padding: 10px;
+}
+
+.sidebar-nav ul li:hover {
+    background-color: #53148d;
+    cursor: pointer;
+    transition: transform 0.7s;
+    transform: scale(1.2);
 }
 
 .sidebar-nav ul li svg {
@@ -54,16 +70,23 @@ button:hover {
 
 .sidebar-nav .first-list {
     margin-bottom: 100px;
+    fill: white;
+}
+
+.sidebar-nav .second-list {
+    fill: white;
 }
 
 .header {
     grid-column: 2 / 5;
     grid-row: 1 / 2;
-    border-bottom: 1px solid;
     display: grid;
-    /*grid-template-rows: repeat(2, 1fr);*/
     grid-template-rows: 100px 120px;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    background-color: #cae4f5c5;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8), 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .header .searchbar {
@@ -184,7 +207,10 @@ button:hover {
     padding: 10px 20px;
     border-radius: 20px;
     font-size: 20px;
-
+    background-color: #881EEB;
+    color: white;
+    border: none;
+    box-shadow: 5px 5px 10px black;
 }
 
 
@@ -195,9 +221,11 @@ button:hover {
     /*grid-template-rows: repeat(6, 1fr);*/
     grid-column: 2 / 5;
     grid-row: 2 / -1;
-    border: 1px 0 0 1px solid;
+    /*border: 1px 0 0 1px solid;*/
     gap: 20px;
     padding: 40px;
+    background-color: #9dc4df;
+    border-radius: 10px;
 }
 
 .main-content .headers {
@@ -231,12 +259,14 @@ button:hover {
 }
 
 .main-content .projects .item {
-    border: 1px solid;
+    border-left: 10px solid #3A2A46;
     height: 300px;
     width: auto;
     display: grid;
     grid-template-rows: 3fr 1fr;
     border-radius: 20px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 15px 10px;
 }
 
 .main-content .projects .item .projectText {
@@ -258,14 +288,22 @@ button:hover {
 .main-content .projects .item .projectBtns a {
     padding: 10px;
     text-decoration: none;
-    color: black;
+    /*color: black;*/
     font-size: 30px;
 }
 
+.main-content .projects .item .projectBtns a:first-child {
+    color: gold;
+}
+
 .main-content .projects .item .projectBtns a:nth-child(2) {
+    color: rgb(101, 40, 214);
     margin: 0 15px;
 }
 
+.main-content .projects .item .projectBtns a:last-child {
+    color: rgb(101, 40, 214);
+}
 
 .main-content .announcements {
     grid-column: 3 / 4;
@@ -275,6 +313,9 @@ button:hover {
     grid-template-rows: repeat(3, 1fr);
     padding: 10px;
     border-radius: 20px;
+    background-color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 15px 10px;
 }
 
 .main-content .announcements .announcement1 {
@@ -330,6 +371,9 @@ button:hover {
     /*border: 1px solid;*/
     display: grid;
     grid-template-rows: 30px repeat(3, 1fr);
+    background-color: #9dc4df;
+    /*box-shadow: rgba(0, 0, 0, 0.35) 10px 15px 10px;*/
+    border-radius: 20px;
 }
 
 .main-content .similar h2 {
@@ -344,6 +388,9 @@ button:hover {
     grid-template-rows: repeat(3, 1fr);
     border: 1px solid;
     border-radius: 20px;
+    background-color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 15px 10px;
 }
 
 /*
